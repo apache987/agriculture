@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スライダー</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            
+            <div class="slide first">
+                <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/800x400?text=Slide+4" alt="Slide 4">
+            </div>
+            
+            <!-- ナビゲーションの自動ボタン -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            
+            <!-- 手動ナビゲーション -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
